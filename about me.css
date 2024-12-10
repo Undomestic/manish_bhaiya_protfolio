@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #2a1f3d;
+    --accent-color: #5391cb;
+    --text-color: #ffffff;
+    --highlight-pink: #ff69b4;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 9px rgba(47, 47, 47, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #4cd4b0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 2rem;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #4cd4b0;
+    transition: width 0.3s ease;
+    right: 0;
+    margin: 0 auto;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #4cd4b0;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.social-icons a:hover {
+    
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px var(--accent-color),
+                 0 0 20px var(--accent-color),
+                 0 0 30px var(--accent-color);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px var(--accent-color),
+                     0 0 10px var(--accent-color),
+                     0 0 15px var(--accent-color);
+    }
+    to {
+        text-shadow: 0 0 10px var(--accent-color),
+                     0 0 20px var(--accent-color),
+                     0 0 30px var(--accent-color);
+    }
+}
+
+.subtitle {
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.profile-section {
+    flex: 0 0 400px;
+}
+
+.profile-frame {
+    padding: 5px;
+}
+
+.profile-frame img {
+    height: 900px;
+    width: fit-content;
+    display: block;
+}
+
+.about-me {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+.about-me h1{
+    font-size: 5rem;
+    color: #000000;
+}
+.about-me h2{
+    margin-top: 10px;
+}
+
+.para{
+    margin-top: 30px;
+    display: flex;
+    width: fit-content;
+}
+
+.para p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+
+}
+
+.email{
+    font-size: larger;
+    color: pink;
+    gap: 1rem;
+}
+
